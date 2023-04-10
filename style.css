@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Raleway&display=swap');
+* {box-sizing: border-box;}
+
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  margin: 0;
+  background-image: url("https://media-wbp.wgcdn.co/media/filer_public/5d/a7/5da7c6a7-2f57-47c1-9d4b-8c0e8e09c656/grille-keyart-btc-new.jpg");
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  font-family: 'Fredoka One';
+}
+
+.index {
+  background-color: #ffffff;
+}
+
+.menu {
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: fixed;
+  right: 100px;
+}
+
+.menu-polozky {
+  list-style-type: none;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.skryte {
+  display: none;
+}
+
+nav {
+  background-color: rgb(241, 241, 241);
+  color: black;
+  font-size: larger;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.divnav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+li a:hover{
+  color: rgb(255, 53, 201);
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+}
+
+ #---------------------------
+ 
+* {box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav > h2 > a {
+  color:  #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+}
+
+header {
+  background-color: #f7f7f7;
+  color: #000000;
+  font-size: 69px;
+  text-align: center;
+  padding: 16px;
+  height:300px;
+}
+
+#house {
+  position: absolute;
+  left: 100px;
+  top: 0px;
+}
+
+#rarrow {
+  position: absolute;
+  left: 70px;
+  top: 180px
+}
+
+#larrow {
+  position: absolute;
+  right: 70px;
+  top: 180px;
+}
+header h1 {
+  margin: 0;
+}
+
+main {
+  width: 80%;
+  margin: 16px auto;
+  max-width: 1000px; /* nastav 1500px pro optimální velikost */
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+section h2 {
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #FFF;
+  text-align: center;
+  padding: 16px;
+}
+
+footer p {
+  margin: 0;
+}
+
+section {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+.infotext {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+.goalstext {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+.futuretext {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+#i1 {
+  padding: 20px;
+  background-image: url('./pics/Professional_Blue_camouflage.jpg');
+  width: 3800px;
+  background-size: cover;
+  background-position: 40%;  
+}
+
+#i2 {
+  padding: 20px;
+  background-image: url('./pics/tournaments.jpg');
+  width: 900px;
+  background-size: cover;
+  background-position: 49%;
+}
+
+#i3 {
+  padding: 20px;
+  background-image: url('./pics/fire-trial-thumb.jpg');
+  width: 970px;
+  background-size: cover;
+  background-position: 60%;
+}
+
+h2{
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .menu-polozky {
+      display: block;
+      margin: 0;
+      padding: 6px;
+  }
+
+  .menu-polozky li {
+      display: inline-block;
+      padding-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    display:block
+  }
+
+  .menu {
+    position: fixed;
+    right: 0px;
+  }
+
+  .menu-polozky {
+    text-align: right;
+    }
+
+  h1{
+    font-family: 'Fredoka One';
+    font-size: 100px;
+  }
+
+  #house {
+    display: none;
+  }
+  
+  #rarrow {
+    display: none;
+  }
+  
+  #larrow {
+    display: none;
+  }
+
+  #i1 {
+    padding: 20px;
+    background-image: url('./pics/Professional_Blue_camouflage.jpg');
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-position: 40%;  
+  }
+  
+  #i2 {
+    padding: 20px;
+    background-image: url('./pics/tournaments.jpg');
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-position: 49%;
+  }
+  
+  #i3 {
+    padding: 20px;
+    background-image: url('./pics/fire-trial-thumb.jpg');
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-position: 60%;
+  }
+}
