@@ -71,7 +71,7 @@ li a {
 }
 
 li a:hover{
-  color: rgb(255, 53, 201);
+  color: rgb(53, 73, 255);
   text-decoration: none;
 }
 
@@ -207,6 +207,72 @@ img {
 h2{
   font-size: 30px;
 }
+
+footer {
+  font-family:Raleway, sans-serif;
+}
+
+footer form {
+  padding: 3px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer label {
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+.souhlasim {
+  color: #0077cc;
+}
+
+footer input[type="email"] {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+footer input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+footer button[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+footer button[type="submit"]:hover {
+  background-color: #005ca3;
+}
+
+footer input[type="email"]:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+footer input:invalid {
+  border-color: red;
+}
+
+footer input:valid {
+  border-color: green;
+}
+
+footer button[type="submit"][aria-busy="true"] {
+  background-color: #ccc;
+}
+
 
 @media only screen and (min-width: 600px) {
   nav {
