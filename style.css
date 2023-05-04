@@ -296,6 +296,53 @@ footer button[type="submit"][aria-busy="true"] {
   }
 }
 
+.galerietext {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#galerie {
+  display: grid;
+}
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 250px);
+}
+
+.obrazek {
+  background-size: cover;
+  background-position: center;
+}
+
+#k1 {
+  grid-column: 1 / 4;
+}
+
+#k1 {
+  background-image: url(./pics/galerie/e50m_1920х1080_hDw6u0R.jpg);
+}
+
+#k2 {
+  background-image: url(./pics/galerie/desktop-wallpaper-Ворлд-Оф-Танкс-Блиц-itl-cat-world-of-tanks-blitz.jpg);
+}
+
+#k3 {
+  background-image: url(./pics/galerie/update-5-9.jpg__1048x590_q95_subsampling-2.jpg);
+  background-size: cover;
+  background-position: 100%;
+}
+
+#k4 {
+  background-image: url(./pics/galerie/hennessey-venom-800-2021-f150-2-web-min.png);
+}
+
+#k5 {
+  background-image: url(./pics/galerie/World-of-Tanks.jpg);
+  grid-column: 1 / 4
+}
+
+
 @media only screen and (max-width: 600px) {
   section {
     display:block
@@ -352,5 +399,31 @@ footer button[type="submit"][aria-busy="true"] {
     height: 280px;
     background-size: cover;
     background-position: 60%;
+  }
+
+  .galerie {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 250px);
+    grid-auto-flow: dense;
+  }
+
+  #k1 {
+    grid-column: 1/4;
+  }
+
+  #k2 {
+    grid-column: 1/4;
+  }
+
+  #k3 {
+    grid-column: 1/4;
+  }
+
+  #k4 {
+    grid-column: 1/4;
+  }
+
+  #k5 {
+    grid-column: 1/4;
   }
 }
