@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Raleway&display=swap');
 * {box-sizing: border-box;}
 
+:root {
+  --white-colour: rgb(241, 241, 241);
+  --white-colour-08: rgb(241, 241, 241, 0.8);
+  --black-colour: rgb(0, 0, 0);
+  --grey-colour: rgb(39, 39, 39);
+  --blue-colour: rgb(53, 73, 255);
+  --blue-colour-06: rgba(53, 73, 255, 0.6);
+  --link-colour: rgb(216, 183, 52);
+  --red-colour: rgb(228, 52, 52);
+  --green-colour: rgb(71, 209, 47);
+}
 
 body {
   font-family: 'Comfortaa', sans-serif;
@@ -12,11 +23,11 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Fredoka One';
+  font-family: 'Raleway';
 }
 
 .index {
-  background-color: #ffffff;
+  background-color: var(--white-colour);
 }
 
 .menu {
@@ -38,9 +49,9 @@ h1, h2, h3 {
 }
 
 nav {
-  background-color: rgb(241, 241, 241);
+  background-color: var(--white-colour);
   color: black;
-  font-size: larger;
+  font-size: 2rem;
   position: sticky;
   top: 0px;
   width: 100%;
@@ -66,12 +77,12 @@ li {
 }
 
 li a {
-  color: #000000;
+  color: var(--black-colour);
   text-decoration: none;
 }
 
 li a:hover{
-  color: rgb(53, 73, 255);
+  color: var(--blue-colour);
   text-decoration: none;
 }
 
@@ -91,12 +102,7 @@ body {
 }
 
 nav > h2 > a {
-  color:  #333;
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(107, 107, 107);
+  color:  var(--black-colour);
   text-decoration: none;
 }
 
@@ -132,15 +138,15 @@ header h1 {
 
 .Hcontainer {
   display: grid;
-  background-color: rgb(241, 241, 241);
+  background-color: var(--white-colour);
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: 
   ". . . . . . ."
   ". . . crown . . ."
-  ". . . htext . . ."
-  ". arrowL . . . . ."
-  ". . . . . arrowR ."
+  ". arrowL htext htext htext arrowR ."
+  ". . htext htext htext . ."
+  ". . . . . . ."
   ;
 }
 
@@ -153,10 +159,21 @@ header h1 {
 .htext {
   grid-area: htext;
   text-align: center;
-  font-size: 69px;
+  font-size: 5rem;
   font-family: Raleway, sans-serif;
 }
 
+.arrowL {
+  grid-area: arrowL;
+  text-align: center;
+  font-size: 60px;
+}
+
+.arrowR {
+  grid-area: arrowR;
+  text-align: center;
+  font-size: 60px;
+}
 
 main {
   width: 80%;
@@ -165,7 +182,7 @@ main {
 }
 
 section {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--white-colour-08);
   padding: 16px;
   margin-bottom: 16px;
 }
@@ -175,8 +192,8 @@ section h2 {
 }
 
 footer {
-  background-color: #333;
-  color: #FFF;
+  background-color: var(--grey-colour);
+  color: var(--white-colour);
   text-align: center;
   padding: 16px;
 }
@@ -191,6 +208,10 @@ section {
 
 img {
   max-width: 100%;
+}
+
+.underline {
+  border-bottom: 2px solid var(--blue-colour-06);
 }
 
 .infotext {
@@ -233,7 +254,7 @@ img {
 }
 
 h2{
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 footer {
@@ -253,13 +274,18 @@ footer label {
 }
 
 .souhlasim {
-  color: #0077cc;
+  color: var(--link-colour);
+}
+
+.divstyle {
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 footer input[type="email"] {
   padding: 10px;
   font-size: 18px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--white-colour);
   border-radius: 8px;
   outline: none;
 }
@@ -269,8 +295,8 @@ footer input[type="checkbox"] {
 }
 
 footer button[type="submit"] {
-  background-color: #0077cc;
-  color: #fff;
+  background-color: var(--blue-colour);
+  color: var(--white-colour);
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
@@ -281,24 +307,24 @@ footer button[type="submit"] {
 }
 
 footer button[type="submit"]:hover {
-  background-color: #005ca3;
+  background-color: var(--blue-colour-06);
 }
 
 footer input[type="email"]:focus {
-  border-color: #0077cc;
+  border-color: var(--blue-colour);
   outline: none;
 }
 
 footer input:invalid {
-  border-color: red;
+  border-color: var(--red-colour);
 }
 
 footer input:valid {
-  border-color: green;
+  border-color: var(--green-colour);
 }
 
 footer button[type="submit"][aria-busy="true"] {
-  background-color: #ccc;
+  background-color: var(--white-colour);
 }
 
 
@@ -454,4 +480,144 @@ footer button[type="submit"][aria-busy="true"] {
   #k5 {
     grid-column: 1/4;
   }
+
+  
+.Hcontainer {
+  display: grid;
+  background-color: var(--white-colour);
+  grid-template-columns /*sloupec*/: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  ". . . . ."
+  ". . crown . ."
+  "arrowL . htext . arrowR"
+  ". . . . ."
+  ;
+}
+
+.crown {
+  grid-area: crown;
+  text-align: center;
+  font-size: 70px;
+}
+
+.htext {
+  grid-area: htext;
+  text-align: center;
+  font-size: 69px;
+  font-family: Raleway, sans-serif;
+}
+
+.arrowL {
+  grid-area: arrowL;
+  text-align: center;
+  font-size: 50px;
+}
+
+.arrowR {
+  grid-area: arrowR;
+  text-align: center;
+  font-size: 50px;
+}
+
+}
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.popup-overlay {
+  font-family: 'Raleway';
+}
+
+.obrazek1 {
+  position: relative;
+  width: 35px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.obrazek2 {
+  position: relative;
+  width: 35px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+}
+
+.popup-overlay {
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(46, 46, 46, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup-window {
+  width: 400px;
+  height: 400px;
+  padding: 1rem;
+  position: absolute;
+  left: calc((100vw - 400px)/2);
+  top: calc((100vh - 400px)/2);
+  background: rgba(194, 194, 252, 2);
+  border: 2px solid var(--blue-colour);
+  border-radius: 15px;
+  box-shadow: 6px 6px 10px var(--blue-colour-06);
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+  outline: 1.5px solid transparent;
+  transition: outline-color 0.3s;
+}
+
+input[type=text]:focus {
+  border: none;
+  outline-color: var(--black-colour);
+}
+
+.subscribe_container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+input[type=submit] {
+  background: rgb(85,63,251);
+  background: linear-gradient(248deg, rgba(85,63,251,1) 0%, rgba(103,89,221,1) 55%, rgba(63,79,251,1) 100%);
+  border-radius: 15px;
+  width: 110px;
+  text-align: center;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.popup_header {
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
 }
