@@ -9,7 +9,38 @@
     <script src="./index.js" type="module"></script>
     <script src="https://kit.fontawesome.com/e2e83b1a12.js" crossorigin="anonymous"></script>
 </head>
-<body class="index">    
+<body class="index">
+
+    <div class="popup-overlay">
+        <div class="popup-window">
+            <div class="newsletter_header">
+                <h2 class="popup_header">Stay Updated with our Clan News!</h2>
+                <p>Join our newsletter to receive the latest updates, events, and announcements from our clan.</p>
+                <div class="newsletter_content">
+                    <div class="input_container">
+                        <div class="obrazek1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Name" name="jmeno" required>
+                    </div>
+                    <br>
+                    <div class="input_container">
+                        <div class="obrazek2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                            </svg>
+                        </div>
+                        <input type="email" placeholder="Email adress" required>
+                    </div>
+                </div>
+                <div class="subscribe_container">
+                    <input type="submit" value="Subscribe!" id="subscribe_button">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
         <nav>
             <div class="divnav">
                 <div class="logo">
@@ -32,13 +63,15 @@
         <div class="Hcontainer">
             <div class="htext">VE1L</div>
             <div class="crown"><i class="fa-solid fa-crown"></i></div>
+            <div class="arrowL"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="arrowR"><i class="fa-solid fa-arrow-left"></i></div>    
         </div>
     </header>
     <main>     
         <section id="uvod">
         <div id="i1">
         </div>
-            <div class="infotext"><h2>Main information</h2>
+            <div class="infotext"><h2 class="underline">Main information</h2>
                 <p>Hello and welcome to VE1L, a highly skilled and welcoming gaming clan.
                     At VE1L, we pride ourselves on being both highly competitive and extremely friendly. We understand that building strong relationships between our members is just as important as honing our skills on the battlefield. That's why we've created a vibrant and inclusive community where players of all levels can thrive and improve.
                     One of the reasons for our success as a clan is our top-tier players. Our roster includes some of the best and most skilled players in the game, who are always ready to help others and share their knowledge. We believe that by fostering an environment of collaboration and mutual support, we can achieve greatness together.
@@ -47,7 +80,7 @@
         </section>
         <section id="cile">
             <div id="i2"></div>
-            <div class="goalstext"><h2>Goals</h2>
+            <div class="goalstext"><h2 class="underline">Goals</h2>
                 <p>At VE1L, we have set our sights on achieving the top spots in the competitive gaming scene. Our passion for the game, combined with our drive to succeed, has led us to establish the following goals:
                     <br>
                     1. Develop our Skills: We are committed to constantly improving our skills and staying up-to-date with the latest strategies and tactics. This includes practicing regularly, analyzing our gameplay, and seeking feedback from our team members.
@@ -65,7 +98,7 @@
         </section>
         <section id="budoucnost">
             <div id="i3"></div>
-            <div class="futuretext"><h2>Future</h2>
+            <div class="futuretext"><h2 class="underline">Future</h2>
                 <p>At VE1L, we are always looking towards the future and working to improve ourselves and our community. We believe that by setting ambitious goals and working together, we can achieve great things in the years to come.
                     <br>
                     Here are some of the things that we have planned for the future:
@@ -82,7 +115,7 @@
         </section>
         <section id="galerie">
             <div class="galerietext">
-                <h2>Galerie</h2>
+                <h2>Galery</h2>
             </div>
             <div class="galerie">
                 <div class="obrazek" id="k1"></div>
@@ -95,20 +128,7 @@
     </main>
     
 <footer>
-    <form>
-        <div class="flexbox-div">
-
-        </div>
-        <label for="email">Přihlaste se k odběru newsletteru:</label>
-        <input type="email" id="email" name="email" placeholder="e-mailová adresa">
-        <div>
-            <input type="checkbox" id="consent" name="consent">
-            <label for="consent">
-                Souhlasím se <a class="souhlasim" href="#zpracovani-osobnich-udaju">zpracováním osobních údajů</a>.
-            </label>
-        </div>
-        <button type="submit">Odeslat</button>
-    </form>
+    <p>VE1L&trade; 2023</p>
 </footer>
 </body>
 </html>
