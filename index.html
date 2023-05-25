@@ -11,9 +11,14 @@
 </head>
 <body class="index">
 
-    <div class="popup-overlay">
+    <div class="popup-overlay" id="popup-overlay">
         <div class="popup-window">
             <div class="newsletter_header">
+                <div class="xmark">
+                    <button id="xmark">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
                 <h2 class="popup_header">Stay Updated with our Clan News!</h2>
                 <p>Join our newsletter to receive the latest updates, events, and announcements from our clan.</p>
                 <div class="newsletter_content">
@@ -36,6 +41,9 @@
                 <div class="subscribe_container">
                     <input type="submit" value="Subscribe!" id="subscribe_button">
                 </div>
+                <div id="errorContainer">
+                    Please fill in all fields.
+                  </div>          
             </div>
         </div>
     </div>
