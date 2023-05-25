@@ -18,7 +18,7 @@ body {
   font-family: 'Raleway', sans-serif;
   color: black;
   margin: 0;
-  background-image: url("https://media-wbp.wgcdn.co/media/filer_public/5d/a7/5da7c6a7-2f57-47c1-9d4b-8c0e8e09c656/grille-keyart-btc-new.jpg");
+  background-image: url("./pics/waves-macos-big-sur-colorful-5k-6016x6016-4992.jpg");
   background-size: cover;
 }
 
@@ -282,6 +282,25 @@ footer label {
   padding-top: 5px;
 }
 
+.xmark {
+  display: flex;
+  position: relative;
+}
+
+.xmark button {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.xmark button:hover {
+  color: var(--red-colour);
+}
+
 footer input[type="email"] {
   padding: 10px;
   font-size: 18px;
@@ -527,10 +546,6 @@ footer button[type="submit"][aria-busy="true"] {
   box-sizing: border-box;
 }
 
-.popup-overlay {
-  font-family: 'Raleway';
-}
-
 .obrazek1 {
   position: relative;
   width: 35px;
@@ -551,6 +566,7 @@ footer button[type="submit"][aria-busy="true"] {
 }
 
 .popup-overlay {
+  font-family: 'Raleway';
   position: fixed;
   z-index: 2;
   background-color: rgba(46, 46, 46, 0.7);
@@ -559,6 +575,8 @@ footer button[type="submit"][aria-busy="true"] {
   left: 0;
   width: 100vw;
   height: 100vh;
+  transition: opacity 1s ease-out;
+  opacity: 1;
 }
 
 .popup-window {
@@ -584,6 +602,12 @@ input[type=text], input[type=email] {
   outline: 1.5px solid transparent;
   transition: outline-color 0.3s;
 }
+
+input[type=email]:focus {
+  border: none;
+  outline-color: var(--black-colour);
+}
+
 
 input[type=text]:focus {
   border: none;
@@ -619,5 +643,17 @@ input[type=submit]:hover {
 }
 
 .hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#errorContainer {
+  display: none;
+  color: red; 
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.closed {
   display: none;
 }
